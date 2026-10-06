@@ -1,0 +1,80 @@
+<!--NAMA: FARAH AULIA RAHMAN
+NIM : 250102040
+KELAS: TI-2B-->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Kalkulator JS</div>
+    <ul class="menu">
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#kalkulator">Kalkulator</a></li>
+      <li><a href="#panduan">Panduan</a></li>
+    </ul>
+  </nav>
+
+  <!-- Area Kalkulator -->
+  <main>
+    <section class="kalkulator" id="kalkulator">
+      <h1>Kalkulator Sederhana</h1>
+      <p>Gunakan dua angka dan pilih operasi yang diinginkan.</p>
+
+      <div class="kartu">
+        <label for="angka-a">Angka pertama</label>
+        <input type="number" id="angka-a" placeholder="Masukkan angka">
+
+        <label for="angka-b">Angka kedua</label>
+        <input type="number" id="angka-b" placeholder="Masukkan angka">
+
+        <div class="tombol-grid">
+          <button id="tombol-tambah">+</button>
+          <button id="tombol-kurang">−</button>
+          <button id="tombol-kali">×</button>
+          <button id="tombol-bagi">÷</button>
+        </div>
+
+        <button class="hapus" id="tombol-hapus">Hapus</button>
+
+        <div class="hasil" id="hasil">Hasil: 0</div>
+        <p id="statistik">Jumlah perhitungan: 0</p>
+        <p id="sifat-hasil">Sifat hasil: -</p>
+
+        <button id="tombol-panduan">Tampilkan Panduan</button>
+      </div>
+    </section>
+
+    <!-- Panduan -->
+    <section id="panduan" style="display: none;">
+      <h2>Panduan Penggunaan</h2>
+      <ol>
+        <li>Masukkan angka pertama.</li>
+        <li>Masukkan angka kedua.</li>
+        <li>Pilih salah satu operasi: tambah, kurang, kali, atau bagi.</li>
+        <li>Hasil perhitungan akan ditampilkan pada bagian hasil.</li>
+        <li>Statistik jumlah perhitungan akan bertambah setiap kali perhitungan berhasil.</li>
+        <li>Gunakan tombol Hapus untuk mengosongkan kedua input.</li>
+        <li>Gunakan tombol Tampilkan Panduan untuk melihat atau menyembunyikan panduan.</li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p id="info-pembuat">&copy; 2026 Praktikum Pemrograman Web Dasar</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
